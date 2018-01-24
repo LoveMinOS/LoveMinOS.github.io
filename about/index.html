@@ -21,6 +21,8 @@
     <meta http-equiv="x-dns-prefetch-control" content="on">
 
 
+    <link rel="dns-prefetch" href="https://cdn1.lncld.net"/>
+
 
 
 
@@ -422,6 +424,21 @@
                 <!-- Post Comments -->
                 
                     
+    <div id="comment" class="comment"></div>
+<script>
+    window.onload = function() {
+        new Valine({
+            av: AV, // source from av-min.js
+            el: '.comment',
+            notify: false,
+            verify: false,
+            app_id: "dJbaU1SjWpqo3rVzwo9AQBrh-gzGzoHsz",
+            app_key: "cbr5pGYoBQrWeXoavOyVeVWe",
+            placeholder: "留下你的脚印"
+        });
+    }
+</script>
+
                 
             </div>
 
@@ -773,6 +790,9 @@ It will not impact the appearance and can give developers a lot of support :)
 
 
 
+
+   <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/xcss/valine@v1.1.7-rc3/dist/Valine.min.js"></script>
 
 
 
