@@ -7,11 +7,11 @@
       <url>/2018/01/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<h1 id="绍强的第一篇博文，新的开始！"><a href="#绍强的第一篇博文，新的开始！" class="headerlink" title="绍强的第一篇博文，新的开始！"></a><center>绍强的第一篇博文，新的开始！</center></h1><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33004552&auto=0&height=66"></iframe></p>
 <h2 id="Hello-Word"><a href="#Hello-Word" class="headerlink" title="Hello Word !"></a><code>Hello Word !</code></h2><p>&emsp;&emsp;早早的就想像各位大牛一样拥有一个独立的个人博客，可以记录生活 中的灵光一现，分享自己get到的新技能。百度了一下各家各户提供的云 服务收费都不低，而且是按月收费，对于一个食堂打菜小哥哥而言不划算啊！</p>
-<center><img src="https://s1.imgsha.com/2018/01/23/YJrRf4.gif" alt="扎心了老铁.jpg"></center>
+<center><img src="http://p32k9rwht.bkt.clouddn.com/blog/180125/Icgg0hfd4J.gif" alt="扎心了老铁.jpg"></center>
 
-<p>&emsp;&emsp;在自学Linux的同时，学习到在安卓机上部署服务器并且运行博客系统实现个人独立博客搭建，也先后接触到<a href="https://github.com/xpleaf/Blog_mini" target="_blank" rel="noopener">Bloog_mini</a>和<a href="https://github.com/otale/tale" target="_blank" rel="noopener">Tale</a>这两个优秀的国内开源播博客系统，当然在部署的过程中也遇到了许多问题，本着有问题就百度的原则，慢慢的问题一点一点的解决，遇到不兼容等情况自己也会写一些小的脚本程序，省去了许多麻烦，两位博客系统的的作者也非常热心，每次发的邮件都很快就做出了回复。但是由于设备硬件等原因，出现博客在访问时出现加载速度慢（毕竟好几年前的手机了）、系统不兼容和一些奇怪Bug，作者也提意安卓机部署博客玩玩就行，长期的话还是VPS + <a href="https://cn.wordpress.org/" target="_blank" rel="noopener">Wordpress</a>，所以我现在转战<a href="https://github.com/" target="_blank" rel="noopener">Github</a> + <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>。（PS：其实之前是在安卓机上部署了Hexo，但是每次<code>git push</code>时太慢，所以果断放弃。）</p>
+<p>&emsp;&emsp;在自学Linux的同时，了解了在安卓机上部署服务器并且运行博客系统实现个人独立博客搭建，也先后接触到<a href="https://github.com/xpleaf/Blog_mini" target="_blank" rel="noopener">Bloog_mini</a>和<a href="https://github.com/otale/tale" target="_blank" rel="noopener">Tale</a>这两个优秀的国内开源播博客系统，当然在部署的过程中也遇到了许多问题，本着有问题就百度的原则，慢慢的问题一点一点的解决，遇到不兼容等情况自己也会写一些小的脚本程序，省去了许多麻烦。两位博客系统的作者也非常热心，每次发的邮件都很快就做出了回复。但是由于设备硬件等原因，出现博客在访问时出现加载速度慢（毕竟好几年前的手机了）、系统不兼容和一些奇怪Bug，作者也提意安卓机部署博客玩玩就行，长期的话还是VPS + <a href="https://cn.wordpress.org/" target="_blank" rel="noopener">Wordpress</a>，所以本人现在转战<a href="https://github.com/" target="_blank" rel="noopener">Github</a> + <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a>。（PS：其实之前是在安卓机上部署了Hexo，但是每次<code>git push</code>时太慢，所以果断放弃。）</p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>&emsp;&emsp;总结这段时间，Linux操作起来更加熟练（还是需要继续努力），接触到像Hexo、Github Pages、SSH 配置、域名解析、CNAME、A 记录等以前看了就懵圈的名词，学会了如何整理和记录自己所学知识，并且加以应用，自己也有了白天学习晚上整理的习惯。如果想自己尝试在安卓机上部署博客系统玩玩，我总结的路线是①通过linux deploy等应用在手机上部署Linux系统，②在手机上部署博客系统，本地能够访问，③内网穿透。更多详细资料还在整理ing……</p>
-<center><img src="https://s1.imgsha.com/2018/01/23/YJrJ9V.png" alt="Bloog_mini后台管理界面.jpg"></center><br><center>Bloog_mini后台管理界面</center><br><center><img src="https://s1.imgsha.com/2018/01/23/YJrpXf.jpg" alt="Tale登录界面.jpg"></center><br><center>Tale登录界面</center>
+<center><img src="http://p32k9rwht.bkt.clouddn.com/blog/180125/1kA9cFKle8.PNG" alt="Bloog_mini后台管理界面.jpg"></center><br><center>Bloog_mini后台管理界面</center><br><center><img src="http://p32k9rwht.bkt.clouddn.com/blog/180125/D7HDki925I.JPG" alt="Tale登录界面.jpg"></center><br><center>Tale登录界面</center>
 
 <p>&emsp;&emsp;学习分享是一件需要坚持的事情，一次很长的旅途，希望自己能够坚持，不断学习，不断进步。<br>&emsp;&emsp;最后，晚安！</p>
 <h2 id="Good-Night"><a href="#Good-Night" class="headerlink" title="Good Night"></a><code>Good Night</code></h2>]]></content>
@@ -35,14 +35,9 @@
   
     
     <entry>
-      <title><![CDATA[About Me]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>讨厌一成不变，喜欢尝试新鲜事物<br>有点宅，不善于主动交际<br>过于执着，难以放下</p>
-<blockquote>
-<p>本人擅长Ps、Dw、Ae、Proteus、Keil、Vs、Auto CAD、Altium Designer等软件的安装与卸载，精通CSS、JavaScript、PHP、ASP、C、C＋＋、C#、Java、Ruby、Perl、Lisp、python、Objective-C、ActionScript、Pascal、spss、sas等单词的拼写，熟悉Windows、Linux、Mac、Android、IOS、WP8等系统的开关机。</p>
-</blockquote>
-<h1 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h1><p>主页：<a href="http://lovemin.space">http://lovemin.space</a><br>Mail：<a href="mailto:lovemin_os@163.com" target="_blank" rel="noopener">lovemin_os@163.com</a><br>GitHub：<a href="https://github.com/LoveMinOS" target="_blank" rel="noopener">全球最大的同性交友平台</a><br>知乎：<a href="https://www.zhihu.com/people/wan-shao-qiang-92/activities" target="_blank" rel="noopener">绍强</a><br>微博：<a href="https://weibo.com/5708553936/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank" rel="noopener">绍强</a><br>网易云音乐：<a href="http://music.163.com/#/user/home?id=314575884" target="_blank" rel="noopener">绍强</a><br>QQ：245838667</p>
-]]></content>
+      <title><![CDATA[tags]]></title>
+      <url>/tags/index.html</url>
+      <content type="html"></content>
     </entry>
     
     <entry>
@@ -52,9 +47,14 @@
     </entry>
     
     <entry>
-      <title><![CDATA[tags]]></title>
-      <url>/tags/index.html</url>
-      <content type="html"></content>
+      <title><![CDATA[About Me]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>讨厌一成不变，喜欢尝试新鲜事物<br>有点宅，不善于主动交际<br>过于执着，难以放下</p>
+<blockquote>
+<p>本人擅长Ps、Dw、Ae、Proteus、Keil、Vs、Auto CAD、Altium Designer等软件的安装与卸载，精通CSS、JavaScript、PHP、ASP、C、C＋＋、C#、Java、Ruby、Perl、Lisp、python、Objective-C、ActionScript、Pascal、spss、sas等单词的拼写，熟悉Windows、Linux、Mac、Android、IOS、WP8等系统的开关机。</p>
+</blockquote>
+<h1 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h1><p>主页：<a href="http://lovemin.space">http://lovemin.space</a><br>Mail：<a href="mailto:lovemin_os@163.com" target="_blank" rel="noopener">lovemin_os@163.com</a><br>GitHub：<a href="https://github.com/LoveMinOS" target="_blank" rel="noopener">全球最大的同性交友平台</a><br>知乎：<a href="https://www.zhihu.com/people/wan-shao-qiang-92/activities" target="_blank" rel="noopener">绍强</a><br>微博：<a href="https://weibo.com/5708553936/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank" rel="noopener">绍强</a><br>网易云音乐：<a href="http://music.163.com/#/user/home?id=314575884" target="_blank" rel="noopener">绍强</a><br>QQ：245838667</p>
+]]></content>
     </entry>
     
   
