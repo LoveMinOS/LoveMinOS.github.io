@@ -3,6 +3,50 @@
   
     
     <entry>
+      <title><![CDATA[在安卓机上部署服务器运行博客系统]]></title>
+      <url>/2018/01/25/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%9C%BA%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/</url>
+      <content type="html"><![CDATA[<h1 id="在安卓机上部署服务器运行博客系统"><a href="#在安卓机上部署服务器运行博客系统" class="headerlink" title="在安卓机上部署服务器运行博客系统"></a><center>在安卓机上部署服务器运行博客系统</center></h1><p>&emsp;&emsp;在查阅大量资料后，我的博客也成功运行在我的手机上了，这段时间对具体过程和遇到的问题进行了总结与反思，所以写这一系列文章来记录一下。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>总的来说，在安卓机上部署博客系统要以下4个步骤：</p>
+<h4 id="部署Linux系统"><a href="#部署Linux系统" class="headerlink" title="部署Linux系统"></a>部署Linux系统</h4><p>&emsp;&emsp;使用安卓软件<a href="">busybox</a>、<a href="">linux deploy</a>在手机上部署Linux系统，通过<a href="">juicessh</a>(安卓端)或者<a href="">xshell</a>(PC端，建议)来登录系统，具体配置文章请查看<a href="">在安卓机上部署服务器运行博客系统 – 基本配置</a>。<br>配置完成后就可以挂载一些小脚本了。</p>
+<h4 id="部署博客系统"><a href="#部署博客系统" class="headerlink" title="部署博客系统"></a>部署博客系统</h4><p>&emsp;&emsp;接下来就是部署博客系统了，由于本人之前部署过<a href="https://github.com/xpleaf/Blog_mini" target="_blank" rel="noopener">Bloog_mini</a>和<a href="https://github.com/otale/tale" target="_blank" rel="noopener">Tale</a>这两个优秀的国内开源播博客系统，在这里分别进行说明，具体部署文章请查看<a href="">在安卓机上部署服务器运行博客系统 – Blog_mini博客系统的部署</a>和<a href="">在安卓机上部署服务器运行博客系统 – Tale博客系统的部署</a>。</p>
+<h4 id="内网穿透"><a href="#内网穿透" class="headerlink" title="内网穿透"></a>内网穿透</h4><p>&emsp;&emsp;博客系统部署好了以后，可以通过内网访问，但是博客系统需要外网访问，解决方法就是内网穿透，方案有<a href="">花生壳</a>、<a href="">frp</a>、<a href="">魔法隧道</a>、<a href="">ngrok</a>、<a href="">NATAPP</a>…花生壳收费贼贵还限流限速；frp需要你的域名备案（我的域名是.space没法备案）；ngrok有免费的、不需要备案且可以自定义域名，NATAPP有免费的但域名系统随机分配，适合测试时使用；魔法隧道可能贵一些，这个可以自行选择。这里我选择了NATAPP进行了测试之后再选择ngrok使用，具体配置文章<a href="">在安卓机上部署服务器运行博客系统 – 内网穿透</a>。</p>
+<h4 id="挂后台"><a href="#挂后台" class="headerlink" title="挂后台"></a>挂后台</h4><p>&emsp;&emsp;完成上述步骤后博客部署已经完成并且成功运行，测试完成后就可以启动博客和ngrok服务</p>
+<h5 id="先启动博客服务："><a href="#先启动博客服务：" class="headerlink" title="先启动博客服务："></a>先启动博客服务：</h5><h6 id="对于Blog-mini博客系统"><a href="#对于Blog-mini博客系统" class="headerlink" title="对于Blog_mini博客系统"></a>对于Blog_mini博客系统</h6><p>切换到Blog_mini下，输入命令以8080端口运行<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gunicorn -b 0.0.0.0:8080 manage:app</span><br></pre></td></tr></table></figure></p>
+<p>如果可以正常运行，Ctrl+C结束，开始挂后台<br>注意：这里<code>8080</code>端口可以自己定义，内网可以通过该端口访问博客，在内网穿透的配置中端口要与之相同<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup gunicorn -b 0.0.0.0:8080 manage:app &amp;</span><br></pre></td></tr></table></figure></p>
+<h6 id="对于Tale博客系统"><a href="#对于Tale博客系统" class="headerlink" title="对于Tale博客系统"></a>对于Tale博客系统</h6><p>手机部署的Linux是32位系统，查看Linux操作系统位数的命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">getconf  LONG_BIT</span><br></pre></td></tr></table></figure></p>
+<p>对于64位系统，Tale作者<a href="">王爵nice</a>大佬给我们写了一个<a href="">tale-cli</a>脚本输入命令（只能在64位操作系统环境下运行），其功能在文档中有详细说明，切换到Tale的目录（即tale-cli所在的目录），在终端输入命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./tale-cli start</span><br></pre></td></tr></table></figure></p>
+<p>即可后台运行Tale博客系统，注意Tale默认端口为<code>9000</code><br>对于32位系统，运行tale-cli会提示权限错误，可以用go语言进行编译运行，或者输入下面命令手动后台运行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nohup java -Xms128m -Xmx128m -Dfile.encoding=UTF-8 -jar tale-least.jar &gt;/dev/null &amp;</span><br></pre></td></tr></table></figure></p>
+<h5 id="启动ngrok"><a href="#启动ngrok" class="headerlink" title="启动ngrok:"></a>启动ngrok:</h5><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./sunny clientid 隧道id</span><br></pre></td></tr></table></figure>
+<h5 id="通过脚本运行"><a href="#通过脚本运行" class="headerlink" title="通过脚本运行"></a>通过脚本运行</h5><p>通过自己写脚本方便自己操作，具体资料整理中。<br>这样博客系统就成功运行在家里闲置的手机上了，啦啦啦啦啦~~</p>
+<p><center><img src="http://p32k9rwht.bkt.clouddn.com/blog/180125/1kA9cFKle8.PNG" alt="Bloog_mini后台管理界面.jpg"></center></p>
+<p><center>Bloog_mini后台管理界面</center></p>
+<p><center><img src="http://p32k9rwht.bkt.clouddn.com/blog/180125/D7HDki925I.JPG" alt="Tale登录界面.jpg"></center></p>
+<p><center>Tale登录界面</center><br>由于文章太长，具体部署步骤在以下三篇文章详细介绍：</p>
+<ol>
+<li><a href="">在安卓机上部署服务器运行博客系统 – 基本配置</a></li>
+<li><a href="">在安卓机上部署服务器运行博客系统 – Blog_mini博客系统的部署</a><br><a href="">在安卓机上部署服务器运行博客系统 – Tale博客系统的部署</a></li>
+<li><a href="">在安卓机上部署服务器运行博客系统 – 内网穿透</a></li>
+</ol>
+]]></content>
+      
+        <categories>
+            
+            <category> 博客部署 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 2018 加油 </tag>
+            
+            <tag> Linux </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[我的第一篇博客]]></title>
       <url>/2018/01/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
       <content type="html"><![CDATA[<h1 id="绍强的第一篇博文，新的开始！"><a href="#绍强的第一篇博文，新的开始！" class="headerlink" title="绍强的第一篇博文，新的开始！"></a><center>绍强的第一篇博文，新的开始！</center></h1><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33004552&auto=0&height=66"></iframe></p>
@@ -35,17 +79,6 @@
   
     
     <entry>
-      <title><![CDATA[About Me]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>讨厌一成不变，喜欢尝试新鲜事物<br>有点宅，不善于主动交际<br>过于执着，难以放下</p>
-<blockquote>
-<p>本人擅长Ps、Dw、Ae、Proteus、Keil、Vs、Auto CAD、Altium Designer等软件的安装与卸载，精通CSS、JavaScript、PHP、ASP、C、C＋＋、C#、Java、Ruby、Perl、Lisp、python、Objective-C、ActionScript、Pascal、spss、sas等单词的拼写，熟悉Windows、Linux、Mac、Android、IOS、WP8等系统的开关机。</p>
-</blockquote>
-<h1 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h1><p>主页：<a href="http://lovemin.space">http://lovemin.space</a><br>Mail：<a href="mailto:lovemin_os@163.com" target="_blank" rel="noopener">lovemin_os@163.com</a><br>GitHub：<a href="https://github.com/LoveMinOS" target="_blank" rel="noopener">全球最大的同性交友平台</a><br>知乎：<a href="https://www.zhihu.com/people/wan-shao-qiang-92/activities" target="_blank" rel="noopener">绍强</a><br>微博：<a href="https://weibo.com/5708553936/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank" rel="noopener">绍强</a><br>网易云音乐：<a href="http://music.163.com/#/user/home?id=314575884" target="_blank" rel="noopener">绍强</a><br>QQ：245838667</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[links]]></title>
       <url>/links/index.html</url>
       <content type="html"></content>
@@ -55,6 +88,17 @@
       <title><![CDATA[tags]]></title>
       <url>/tags/index.html</url>
       <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[About Me]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>讨厌一成不变，喜欢尝试新鲜事物<br>有点宅，不善于主动交际<br>过于执着，难以放下</p>
+<blockquote>
+<p>本人擅长Ps、Dw、Ae、Proteus、Keil、Vs、Auto CAD、Altium Designer等软件的安装与卸载，精通CSS、JavaScript、PHP、ASP、C、C＋＋、C#、Java、Ruby、Perl、Lisp、python、Objective-C、ActionScript、Pascal、spss、sas等单词的拼写，熟悉Windows、Linux、Mac、Android、IOS、WP8等系统的开关机。</p>
+</blockquote>
+<h1 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h1><p>主页：<a href="http://lovemin.space">http://lovemin.space</a><br>Mail：<a href="mailto:lovemin_os@163.com" target="_blank" rel="noopener">lovemin_os@163.com</a><br>GitHub：<a href="https://github.com/LoveMinOS" target="_blank" rel="noopener">全球最大的同性交友平台</a><br>知乎：<a href="https://www.zhihu.com/people/wan-shao-qiang-92/activities" target="_blank" rel="noopener">绍强</a><br>微博：<a href="https://weibo.com/5708553936/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank" rel="noopener">绍强</a><br>网易云音乐：<a href="http://music.163.com/#/user/home?id=314575884" target="_blank" rel="noopener">绍强</a><br>QQ：245838667</p>
+]]></content>
     </entry>
     
   
