@@ -3,6 +3,89 @@
   
     
     <entry>
+      <title><![CDATA[在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署]]></title>
+      <url>/2018/01/29/%E5%9C%A8%E5%AE%89%E5%8D%93%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%20%E2%80%93%20Blog_mini%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%83%A8%E7%BD%B2/</url>
+      <content type="html"><![CDATA[<h1 id="在安卓上部署服务器运行博客系统-–-Blog-mini博客系统的部署"><a href="#在安卓上部署服务器运行博客系统-–-Blog-mini博客系统的部署" class="headerlink" title="在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署"></a><center>在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署</center></h1><p>本系列其他文章：</p>
+<ol>
+<li><a href="http://lovemin.space/2018/01/25/在安卓机上部署服务器运行博客系统/">在安卓上部署服务器运行博客系统 </a></li>
+<li><a href="http://lovemin.space/2018/01/25/在安卓机上部署服务器运行博客系统%20–%20基本配置/">在安卓上部署服务器运行博客系统 – 基本配置</a></li>
+<li><a href="">在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署</a> (本文)<br><a href="">在安卓上部署服务器运行博客系统 – Tale博客系统的部署</a></li>
+<li><a href="">在安卓上部署服务器运行博客系统 – 内网穿透</a></li>
+</ol>
+<hr>
+<h2 id="Blog-mini是什么？"><a href="#Blog-mini是什么？" class="headerlink" title="Blog_mini是什么？"></a>Blog_mini是什么？</h2><p>&emsp;&emsp;Blog_mini是一个用Python开发的，拥有简洁页面（支持响应式布局！）和强大后台管理功能的开源博客系统，使用Blog_mini，你将能轻松使用和管理你的个人博客。</p>
+<p>强大管理后台：<br><img src="http://p32k9rwht.bkt.clouddn.com/blog/180129/HGIC64K5Fb.png?imageslim" alt="强大管理后台.png"></p>
+<h2 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h2><p>&emsp;&emsp;本文只对 Blog_mini博客系统的部署进行简单的介绍，通过本文的阅读，你将可以在一个全新的Ubuntu系统上完全部署Blog_mini，从而成功架设属于你的个人博客网站。<br>&emsp;&emsp;这里使用的操作系统为：Ubuntu 15.10，理论上，只要操作系统上安装的Python版本为2.6.x或2.7.x，都可以成功部署Blog_mini。</p>
+<h2 id="获取Blog-mini源代码"><a href="#获取Blog-mini源代码" class="headerlink" title="获取Blog_mini源代码"></a>获取Blog_mini源代码</h2><p>&emsp;&emsp;有以下两种方式可以获取Blog_mini的源代码：</p>
+<ul>
+<li>通过git的方式</li>
+<li>通过Blog_mini项目主页下载<br>&emsp;&emsp;在这里我将对这两种方法进行介绍<blockquote>
+<p>这里推荐第一种方法。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="通过git获取源代码"><a href="#通过git获取源代码" class="headerlink" title="通过git获取源代码"></a>通过git获取源代码</h3><p>先要确定系统已经安装了git版本控制系统，在终端输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br></pre></td></tr></table></figure></p>
+<ul>
+<li>如果安装了，终端则会显示git的版本信息，如果“git”没有安装，可以在终端输入下面命令通过apt-get方式安装：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>无法安装的话可以切换到超级用户（root）下在终端输入上面命令。</p>
+</blockquote>
+<ul>
+<li>安装完成后，切换到普通用户，在普通用户用户目录中创建一个文件夹用于存放Blog_mini文件，这里我根据作者部署文档创建一个名为project的目录：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir project</span><br><span class="line"><span class="built_in">cd</span> project</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>在project目录下在终端输入下面命令从Blog_mini项目地址中克隆源代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xpleaf/Blog_mini</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>如果网络情况良好的话，很快就可以把代码克隆下来。</p>
+</blockquote>
+<ul>
+<li>现在在project目录下就出现了一个名为Blog_mini的文件夹；进入Blog_mini目录下，可以查看Blog_mini的源代码目录结构：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Blog_mini</span><br><span class="line">ls</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="通过Blog-mini项目主页下载源代码"><a href="#通过Blog-mini项目主页下载源代码" class="headerlink" title="通过Blog_mini项目主页下载源代码"></a>通过Blog_mini项目主页下载源代码</h3><p> &emsp;&emsp;如果你想通过该方式获得Blog_mini的源码的，那么请最好在有GUI界面的操作系统中进行操作，比如你可以先在Windows或Mac或有GUI界面的Linux操作系统中下载下来，再把它传到我们的Ubuntu操作系统中。</p>
+<ul>
+<li>进入项目主页：<br><a href="https://github.com/xpleaf/Blog_mini" target="_blank" rel="noopener">https://github.com/xpleaf/Blog_mini</a></li>
+<li>点击Download ZIP按钮</li>
+<li>下载后的文件名应该是：Blog_mini-master.zip</li>
+</ul>
+<blockquote>
+<p>下载完成后，将其解压缩并通过fpt传到Ubuntu操作系统中即可，Blog_mini的源码目录结构与之前的通过git的方式是一样的。</p>
+</blockquote>
+<h2 id="安装python和pip"><a href="#安装python和pip" class="headerlink" title="安装python和pip"></a>安装python和pip</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python</span><br><span class="line">sudo apt-get install python-pip</span><br></pre></td></tr></table></figure></p>
+<h2 id="安装virtualenv"><a href="#安装virtualenv" class="headerlink" title="安装virtualenv"></a>安装virtualenv</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install virtualenv</span><br></pre></td></tr></table></figure></p>
+<p>&emsp;&emsp;如果上面的命令说找不到virtualenv的，就使用下面的命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python-virtualenv</span><br></pre></td></tr></table></figure></p>
+<h2 id="创建虚拟环境venv"><a href="#创建虚拟环境venv" class="headerlink" title="创建虚拟环境venv"></a>创建虚拟环境venv</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">virtualenv venv</span><br></pre></td></tr></table></figure></p>
+<h2 id="激活虚拟环境venv"><a href="#激活虚拟环境venv" class="headerlink" title="激活虚拟环境venv"></a>激活虚拟环境venv</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> venv/bin/activate</span><br></pre></td></tr></table></figure></p>
+<p> 注意看提示符的改变。</p>
+<h2 id="安装Blog-mini需求文件"><a href="#安装Blog-mini需求文件" class="headerlink" title="安装Blog_mini需求文件"></a>安装Blog_mini需求文件</h2><ul>
+<li>执行如下命令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements/common.txt</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>&emsp;&emsp;因为这里要安装Blog_mini所需的一些扩展包，所以需要一定时间，当然如果网络良好的话，很快就可以安装完成。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 博客部署 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> 2018 加油 </tag>
+            
+            <tag> Linux </tag>
+            
+            <tag> 博客系统 </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[在安卓机上部署服务器运行博客系统 – 基本配置]]></title>
       <url>/2018/01/25/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%9C%BA%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%20%E2%80%93%20%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</url>
       <content type="html"><![CDATA[<h1 id="在安卓机上部署服务器运行博客系统–-基本配置"><a href="#在安卓机上部署服务器运行博客系统–-基本配置" class="headerlink" title="在安卓机上部署服务器运行博客系统– 基本配置"></a><center>在安卓机上部署服务器运行博客系统– 基本配置</center></h1><p>本系列其他文章：</p>
@@ -136,7 +219,8 @@
     <entry>
       <title><![CDATA[我的第一篇博客]]></title>
       <url>/2018/01/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-      <content type="html"><![CDATA[<h1 id="绍强的第一篇博文，新的开始！"><a href="#绍强的第一篇博文，新的开始！" class="headerlink" title="绍强的第一篇博文，新的开始！"></a><center>绍强的第一篇博文，新的开始！</center></h1><p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33004552&auto=0&height=66"></iframe></p>
+      <content type="html"><![CDATA[<h1 id="绍强的第一篇博文，新的开始！"><a href="#绍强的第一篇博文，新的开始！" class="headerlink" title="绍强的第一篇博文，新的开始！"></a><center>绍强的第一篇博文，新的开始！</center></h1><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33004552&auto=0&height=66"></iframe>
+
 <h2 id="Hello-Word"><a href="#Hello-Word" class="headerlink" title="Hello Word !"></a><code>Hello Word !</code></h2><p>&emsp;&emsp;早早的就想像各位大牛一样拥有一个独立的个人博客，可以记录生活 中的灵光一现，分享自己get到的新技能。百度了一下各家各户提供的云 服务收费都不低，而且是按月收费，对于一个食堂打菜小哥哥而言不划算啊！</p>
 <center><img src="http://p32k9rwht.bkt.clouddn.com/blog/180125/Icgg0hfd4J.gif" alt="扎心了老铁.jpg"></center>
 
