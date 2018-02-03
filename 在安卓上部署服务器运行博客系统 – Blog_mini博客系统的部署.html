@@ -513,46 +513,64 @@
 </blockquote>
 </li>
 </ul>
-<h3 id="通过git获取源代码"><a href="#通过git获取源代码" class="headerlink" title="通过git获取源代码"></a>通过git获取源代码</h3><p>先要确定系统已经安装了git版本控制系统，在终端输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git version</span><br></pre></td></tr></table></figure></p>
+<h3 id="通过git获取源代码"><a href="#通过git获取源代码" class="headerlink" title="通过git获取源代码"></a>通过git获取源代码</h3><p>先要确定系统已经安装了git版本控制系统，在终端输入下面命令：</p>
+<pre><code class="bash">git version
+</code></pre>
 <ul>
-<li>如果安装了，终端则会显示git的版本信息，如果“git”没有安装，可以在终端输入下面命令通过apt-get方式安装：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install git</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
+<li><p>如果安装了，终端则会显示git的版本信息，如果“git”没有安装，可以在终端输入下面命令通过apt-get方式安装：</p>
+<pre><code class="bash">sudo apt-get install git
+</code></pre>
 <blockquote>
 <p>无法安装的话可以切换到超级用户（root）下在终端输入上面命令。</p>
 </blockquote>
-<ul>
-<li>安装完成后，切换到普通用户，在普通用户用户目录中创建一个文件夹用于存放Blog_mini文件，这里我根据作者部署文档创建一个名为project的目录：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir project</span><br><span class="line"><span class="built_in">cd</span> project</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<p>在project目录下在终端输入下面命令从Blog_mini项目地址中克隆源代码：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/xpleaf/Blog_mini</span><br></pre></td></tr></table></figure></p>
+<li><p>安装完成后，切换到普通用户，在普通用户用户目录中创建一个文件夹用于存放Blog_mini文件，这里我根据作者部署文档创建一个名为project的目录：</p>
+<pre><code class="bash">mkdir project
+cd project
+</code></pre>
+<p>在project目录下在终端输入下面命令从Blog_mini项目地址中克隆源代码：</p>
+<pre><code class="bash">git clone https://github.com/xpleaf/Blog_mini
+</code></pre>
 <blockquote>
 <p>如果网络情况良好的话，很快就可以把代码克隆下来。</p>
 </blockquote>
-<ul>
-<li>现在在project目录下就出现了一个名为Blog_mini的文件夹；进入Blog_mini目录下，可以查看Blog_mini的源代码目录结构：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> Blog_mini</span><br><span class="line">ls</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<h3 id="通过Blog-mini项目主页下载源代码"><a href="#通过Blog-mini项目主页下载源代码" class="headerlink" title="通过Blog_mini项目主页下载源代码"></a>通过Blog_mini项目主页下载源代码</h3><p> &emsp;&emsp;如果你想通过该方式获得Blog_mini的源码的，那么请最好在有GUI界面的操作系统中进行操作，比如你可以先在Windows或Mac或有GUI界面的Linux操作系统中下载下来，再把它传到我们的Ubuntu操作系统中。</p>
-<ul>
-<li>进入项目主页：<br><a href="https://github.com/xpleaf/Blog_mini" target="_blank" rel="noopener">https://github.com/xpleaf/Blog_mini</a></li>
+<li><p>现在在project目录下就出现了一个名为Blog_mini的文件夹；进入Blog_mini目录下，可以查看Blog_mini的源代码目录结构：</p>
+<pre><code class="bash">cd Blog_mini
+ls
+</code></pre>
+<h3 id="通过Blog-mini项目主页下载源代码"><a href="#通过Blog-mini项目主页下载源代码" class="headerlink" title="通过Blog_mini项目主页下载源代码"></a>通过Blog_mini项目主页下载源代码</h3><p>&emsp;&emsp;如果你想通过该方式获得Blog_mini的源码的，那么请最好在有GUI界面的操作系统中进行操作，比如你可以先在Windows或Mac或有GUI界面的Linux操作系统中下载下来，再把它传到我们的Ubuntu操作系统中。</p>
+</li>
+<li><p>进入项目主页：<br><a href="https://github.com/xpleaf/Blog_mini" target="_blank" rel="noopener">https://github.com/xpleaf/Blog_mini</a></p>
+</li>
 <li>点击Download ZIP按钮</li>
 <li>下载后的文件名应该是：Blog_mini-master.zip</li>
 </ul>
 <blockquote>
 <p>下载完成后，将其解压缩并通过fpt传到Ubuntu操作系统中即可，Blog_mini的源码目录结构与之前的通过git的方式是一样的。</p>
 </blockquote>
-<h2 id="安装python和pip"><a href="#安装python和pip" class="headerlink" title="安装python和pip"></a>安装python和pip</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python</span><br><span class="line">sudo apt-get install python-pip</span><br></pre></td></tr></table></figure></p>
-<h2 id="安装virtualenv"><a href="#安装virtualenv" class="headerlink" title="安装virtualenv"></a>安装virtualenv</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install virtualenv</span><br></pre></td></tr></table></figure></p>
-<p>&emsp;&emsp;如果上面的命令说找不到virtualenv的，就使用下面的命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install python-virtualenv</span><br></pre></td></tr></table></figure></p>
-<h2 id="创建虚拟环境venv"><a href="#创建虚拟环境venv" class="headerlink" title="创建虚拟环境venv"></a>创建虚拟环境venv</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">virtualenv venv</span><br></pre></td></tr></table></figure></p>
-<h2 id="激活虚拟环境venv"><a href="#激活虚拟环境venv" class="headerlink" title="激活虚拟环境venv"></a>激活虚拟环境venv</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> venv/bin/activate</span><br></pre></td></tr></table></figure></p>
+<h2 id="安装python和pip"><a href="#安装python和pip" class="headerlink" title="安装python和pip"></a>安装python和pip</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：</p>
+<pre><code class="bash">sudo apt-get install python
+sudo apt-get install python-pip
+</code></pre>
+<h2 id="安装virtualenv"><a href="#安装virtualenv" class="headerlink" title="安装virtualenv"></a>安装virtualenv</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：</p>
+<pre><code class="bash">sudo apt-get install virtualenv
+</code></pre>
+<p>&emsp;&emsp;如果上面的命令说找不到virtualenv的，就使用下面的命令：</p>
+<pre><code class="bash">sudo apt-get install python-virtualenv
+</code></pre>
+<h2 id="创建虚拟环境venv"><a href="#创建虚拟环境venv" class="headerlink" title="创建虚拟环境venv"></a>创建虚拟环境venv</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：</p>
+<pre><code class="bash">virtualenv venv
+</code></pre>
+<h2 id="激活虚拟环境venv"><a href="#激活虚拟环境venv" class="headerlink" title="激活虚拟环境venv"></a>激活虚拟环境venv</h2><p>&emsp;&emsp;在Blog_mini目录下输入下面命令：</p>
+<pre><code class="bash">source venv/bin/activate
+</code></pre>
 <p> 注意看提示符的改变。</p>
 <h2 id="安装Blog-mini需求文件"><a href="#安装Blog-mini需求文件" class="headerlink" title="安装Blog_mini需求文件"></a>安装Blog_mini需求文件</h2><ul>
-<li>执行如下命令：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install -r requirements/common.txt</span><br></pre></td></tr></table></figure>
-</li>
+<li>执行如下命令：<pre><code class="bash">pip install -r requirements/common.txt
+</code></pre>
+&emsp;&emsp;因为这里要安装Blog_mini所需的一些扩展包，所以需要一定时间，当然如果网络良好的话，很快就可以安装完成。</li>
 </ul>
-<p>&emsp;&emsp;因为这里要安装Blog_mini所需的一些扩展包，所以需要一定时间，当然如果网络良好的话，很快就可以安装完成。</p>
 
         
                 <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
@@ -986,6 +1004,10 @@ It will not impact the appearance and can give developers a lot of support :)
 <!-- Import prettify js  -->
 
 
+    
+        <script>lsloader.load("hanabi","/js/hanabi-browser-bundle.js?Pki5+pzkluqu53g+ouMWpA==", true)</script>
+    
+
 
 <!-- Window Load -->
 <!-- add class for prettify -->
@@ -996,6 +1018,10 @@ It will not impact the appearance and can give developers a lot of support :)
     });
 
     
+    
+        
+        
+        HanabiBrowser.start('pre code',true);
     
 </script>
 
