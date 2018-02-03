@@ -106,7 +106,7 @@ sudo apt-get install python-pip
     <entry>
       <title><![CDATA[在安卓机上部署服务器运行博客系统 – 基本配置]]></title>
       <url>/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%9C%BA%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%20%E2%80%93%20%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE.html</url>
-      <content type="html"><![CDATA[<h1 id="在安卓机上部署服务器运行博客系统–-基本配置"><a href="#在安卓机上部署服务器运行博客系统–-基本配置" class="headerlink" title="在安卓机上部署服务器运行博客系统– 基本配置"></a><center>在安卓机上部署服务器运行博客系统– 基本配置</center></h1><p>本系列其他文章：</p>
+      <content type="html"><![CDATA[<p>本系列其他文章：</p>
 <ol>
 <li><a href="http://lovemin.space/2018/01/25/在安卓机上部署服务器运行博客系统/">在安卓上部署服务器运行博客系统 </a></li>
 <li><a href="http://lovemin.space/2018/01/25/在安卓机上部署服务器运行博客系统%20–%20基本配置/">在安卓上部署服务器运行博客系统 – 基本配置</a> (本文)</li>
@@ -191,7 +191,7 @@ sudo apt-get install python-pip
     <entry>
       <title><![CDATA[在安卓机上部署服务器运行博客系统]]></title>
       <url>/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%9C%BA%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F.html</url>
-      <content type="html"><![CDATA[<h1 id="在安卓机上部署服务器运行博客系统"><a href="#在安卓机上部署服务器运行博客系统" class="headerlink" title="在安卓机上部署服务器运行博客系统"></a><center>在安卓机上部署服务器运行博客系统</center></h1><p>&emsp;&emsp;在查阅大量资料后，我的博客也成功运行在我的手机上了，这段时间对具体过程和遇到的问题进行了总结与反思，所以写这一系列文章来记录一下。</p>
+      <content type="html"><![CDATA[<p>&emsp;&emsp;在查阅大量资料后，我的博客也成功运行在我的手机上了，这段时间对具体过程和遇到的问题进行了总结与反思，所以写这一系列文章来记录一下。</p>
 <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>总的来说，在安卓机上部署博客系统要以下4个步骤：</p>
 <h4 id="部署Linux系统"><a href="#部署Linux系统" class="headerlink" title="部署Linux系统"></a>部署Linux系统</h4><p>&emsp;&emsp;使用安卓软件<a href="">busybox</a>、<a href="">linux deploy</a>在手机上部署Linux系统，通过<a href="">juicessh</a>(安卓端)或者<a href="">xshell</a>(PC端，建议)来登录系统，具体配置文章请查看<a href="">在安卓机上部署服务器运行博客系统 – 基本配置</a>。<br>配置完成后就可以挂载一些小脚本了。</p>
 <h4 id="部署博客系统"><a href="#部署博客系统" class="headerlink" title="部署博客系统"></a>部署博客系统</h4><p>&emsp;&emsp;接下来就是部署博客系统了，由于本人之前部署过<a href="https://github.com/xpleaf/Blog_mini" target="_blank" rel="noopener">Bloog_mini</a>和<a href="https://github.com/otale/tale" target="_blank" rel="noopener">Tale</a>这两个优秀的国内开源播博客系统，在这里分别进行说明，具体部署文章请查看<a href="">在安卓机上部署服务器运行博客系统 – Blog_mini博客系统的部署</a>和<a href="">在安卓机上部署服务器运行博客系统 – Tale博客系统的部署</a>。</p>
@@ -279,17 +279,6 @@ sudo apt-get install python-pip
   
     
     <entry>
-      <title><![CDATA[情不知所起，一往而深]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>讨厌一成不变，喜欢尝试新鲜事物<br>有点宅，不善于主动交际<br>过于执着，难以放下</p>
-<blockquote>
-<p>本人擅长Ps、Dw、Ae、Proteus、Keil、Vs、Auto CAD、Altium Designer等软件的安装与卸载，精通CSS、JavaScript、PHP、ASP、C、C＋＋、C#、Java、Ruby、Perl、Lisp、python、Objective-C、ActionScript、Pascal、spss、sas等单词的拼写，熟悉Windows、Linux、Mac、Android、IOS、WP8等系统的开关机。</p>
-</blockquote>
-<h1 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h1><p>主页：<a href="http://lovemin.space">http://lovemin.space</a><br>Mail：<a href="mailto:lovemin_os@163.com" target="_blank" rel="noopener">lovemin_os@163.com</a><br>GitHub：<a href="https://github.com/LoveMinOS" target="_blank" rel="noopener">全球最大的同性交友平台</a><br>知乎：<a href="https://www.zhihu.com/people/wan-shao-qiang-92/activities" target="_blank" rel="noopener">绍强</a><br>微博：<a href="https://weibo.com/5708553936/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank" rel="noopener">绍强</a><br>网易云音乐：<a href="http://music.163.com/#/user/home?id=314575884" target="_blank" rel="noopener">绍强</a><br>QQ：245838667</p>
-]]></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[links]]></title>
       <url>/links/index.html</url>
       <content type="html"></content>
@@ -299,6 +288,17 @@ sudo apt-get install python-pip
       <title><![CDATA[tags]]></title>
       <url>/tags/index.html</url>
       <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[情不知所起，一往而深]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>讨厌一成不变，喜欢尝试新鲜事物<br>有点宅，不善于主动交际<br>过于执着，难以放下</p>
+<blockquote>
+<p>本人擅长Ps、Dw、Ae、Proteus、Keil、Vs、Auto CAD、Altium Designer等软件的安装与卸载，精通CSS、JavaScript、PHP、ASP、C、C＋＋、C#、Java、Ruby、Perl、Lisp、python、Objective-C、ActionScript、Pascal、spss、sas等单词的拼写，熟悉Windows、Linux、Mac、Android、IOS、WP8等系统的开关机。</p>
+</blockquote>
+<h1 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h1><p>主页：<a href="http://lovemin.space">http://lovemin.space</a><br>Mail：<a href="mailto:lovemin_os@163.com" target="_blank" rel="noopener">lovemin_os@163.com</a><br>GitHub：<a href="https://github.com/LoveMinOS" target="_blank" rel="noopener">全球最大的同性交友平台</a><br>知乎：<a href="https://www.zhihu.com/people/wan-shao-qiang-92/activities" target="_blank" rel="noopener">绍强</a><br>微博：<a href="https://weibo.com/5708553936/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank" rel="noopener">绍强</a><br>网易云音乐：<a href="http://music.163.com/#/user/home?id=314575884" target="_blank" rel="noopener">绍强</a><br>QQ：245838667</p>
+]]></content>
     </entry>
     
   
