@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署]]></title>
       <url>/%E5%9C%A8%E5%AE%89%E5%8D%93%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%20%E2%80%93%20Blog_mini%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%83%A8%E7%BD%B2.html</url>
-      <content type="html"><![CDATA[<h1 id="在安卓上部署服务器运行博客系统-–-Blog-mini博客系统的部署"><a href="#在安卓上部署服务器运行博客系统-–-Blog-mini博客系统的部署" class="headerlink" title="在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署"></a><center>在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署</center></h1><p>本系列其他文章：</p>
+      <content type="html"><![CDATA[<p>本系列其他文章：</p>
 <ol>
 <li><a href="http://lovemin.space/2018/01/25/在安卓机上部署服务器运行博客系统/">在安卓上部署服务器运行博客系统 </a></li>
 <li><a href="http://lovemin.space/2018/01/25/在安卓机上部署服务器运行博客系统%20–%20基本配置/">在安卓上部署服务器运行博客系统 – 基本配置</a></li>
@@ -279,14 +279,14 @@ sudo apt-get install python-pip
   
     
     <entry>
-      <title><![CDATA[links]]></title>
-      <url>/links/index.html</url>
+      <title><![CDATA[tags]]></title>
+      <url>/tags/index.html</url>
       <content type="html"></content>
     </entry>
     
     <entry>
-      <title><![CDATA[tags]]></title>
-      <url>/tags/index.html</url>
+      <title><![CDATA[links]]></title>
+      <url>/links/index.html</url>
       <content type="html"></content>
     </entry>
     
