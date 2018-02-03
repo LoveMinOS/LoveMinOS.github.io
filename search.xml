@@ -4,7 +4,7 @@
     
     <entry>
       <title><![CDATA[在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署]]></title>
-      <url>/2018/01/29/%E5%9C%A8%E5%AE%89%E5%8D%93%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%20%E2%80%93%20Blog_mini%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%83%A8%E7%BD%B2/</url>
+      <url>/%E5%9C%A8%E5%AE%89%E5%8D%93%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%20%E2%80%93%20Blog_mini%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%E7%9A%84%E9%83%A8%E7%BD%B2.html</url>
       <content type="html"><![CDATA[<h1 id="在安卓上部署服务器运行博客系统-–-Blog-mini博客系统的部署"><a href="#在安卓上部署服务器运行博客系统-–-Blog-mini博客系统的部署" class="headerlink" title="在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署"></a><center>在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署</center></h1><p>本系列其他文章：</p>
 <ol>
 <li><a href="http://lovemin.space/2018/01/25/在安卓机上部署服务器运行博客系统/">在安卓上部署服务器运行博客系统 </a></li>
@@ -87,7 +87,7 @@
     
     <entry>
       <title><![CDATA[在安卓机上部署服务器运行博客系统 – 基本配置]]></title>
-      <url>/2018/01/25/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%9C%BA%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%20%E2%80%93%20%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE/</url>
+      <url>/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%9C%BA%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F%20%E2%80%93%20%E5%9F%BA%E6%9C%AC%E9%85%8D%E7%BD%AE.html</url>
       <content type="html"><![CDATA[<h1 id="在安卓机上部署服务器运行博客系统–-基本配置"><a href="#在安卓机上部署服务器运行博客系统–-基本配置" class="headerlink" title="在安卓机上部署服务器运行博客系统– 基本配置"></a><center>在安卓机上部署服务器运行博客系统– 基本配置</center></h1><p>本系列其他文章：</p>
 <ol>
 <li><a href="http://lovemin.space/2018/01/25/在安卓机上部署服务器运行博客系统/">在安卓上部署服务器运行博客系统 </a></li>
@@ -172,7 +172,7 @@
     
     <entry>
       <title><![CDATA[在安卓机上部署服务器运行博客系统]]></title>
-      <url>/2018/01/25/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%9C%BA%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F/</url>
+      <url>/%E5%9C%A8%E5%AE%89%E5%8D%93%E6%9C%BA%E4%B8%8A%E9%83%A8%E7%BD%B2%E6%9C%8D%E5%8A%A1%E5%99%A8%E8%BF%90%E8%A1%8C%E5%8D%9A%E5%AE%A2%E7%B3%BB%E7%BB%9F.html</url>
       <content type="html"><![CDATA[<h1 id="在安卓机上部署服务器运行博客系统"><a href="#在安卓机上部署服务器运行博客系统" class="headerlink" title="在安卓机上部署服务器运行博客系统"></a><center>在安卓机上部署服务器运行博客系统</center></h1><p>&emsp;&emsp;在查阅大量资料后，我的博客也成功运行在我的手机上了，这段时间对具体过程和遇到的问题进行了总结与反思，所以写这一系列文章来记录一下。</p>
 <h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p>总的来说，在安卓机上部署博客系统要以下4个步骤：</p>
 <h4 id="部署Linux系统"><a href="#部署Linux系统" class="headerlink" title="部署Linux系统"></a>部署Linux系统</h4><p>&emsp;&emsp;使用安卓软件<a href="">busybox</a>、<a href="">linux deploy</a>在手机上部署Linux系统，通过<a href="">juicessh</a>(安卓端)或者<a href="">xshell</a>(PC端，建议)来登录系统，具体配置文章请查看<a href="">在安卓机上部署服务器运行博客系统 – 基本配置</a>。<br>配置完成后就可以挂载一些小脚本了。</p>
@@ -218,7 +218,7 @@
     
     <entry>
       <title><![CDATA[我的第一篇博客]]></title>
-      <url>/2018/01/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+      <url>/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2.html</url>
       <content type="html"><![CDATA[<h1 id="绍强的第一篇博文，新的开始！"><a href="#绍强的第一篇博文，新的开始！" class="headerlink" title="绍强的第一篇博文，新的开始！"></a><center>绍强的第一篇博文，新的开始！</center></h1><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=33004552&auto=0&height=66"></iframe>
 
 <h2 id="Hello-Word"><a href="#Hello-Word" class="headerlink" title="Hello Word !"></a><code>Hello Word !</code></h2><p>&emsp;&emsp;早早的就想像各位大牛一样拥有一个独立的个人博客，可以记录生活 中的灵光一现，分享自己get到的新技能。百度了一下各家各户提供的云 服务收费都不低，而且是按月收费，对于一个食堂打菜小哥哥而言不划算啊！</p>

@@ -41,7 +41,7 @@
     
     <title>
         
-            归档 | 
+            在安卓机上部署服务器运行博客系统 – 基本配置 | 
         
         绍强的技术博客
     </title>
@@ -53,7 +53,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="绍强">
     <meta name="description" itemprop="description" content="情不知所起，一往而深">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",2018 加油,Linux,博客系统">
 
     <!-- Import lsloader -->
     <script>(function(){window.lsloader={jsRunSequence:[],jsnamemap:{},cssnamemap:{}};lsloader.removeLS=function(key){try{localStorage.removeItem(key)}catch(e){}};lsloader.setLS=function(key,val){try{localStorage.setItem(key,val)}catch(e){}};lsloader.getLS=function(key){var val="";try{val=localStorage.getItem(key)}catch(e){val=""}return val};versionString="/*"+(window.materialVersion||"unknownVersion")+"*/";lsloader.clean=function(){try{var keys=[];for(var i=0;i<localStorage.length;i++){keys.push(localStorage.key(i))}keys.forEach(function(key){var data=lsloader.getLS(key);if(window.oldVersion){var remove=window.oldVersion.reduce(function(p,c){return p||data.indexOf("/*"+c+"*/")!==-1},false);if(remove){lsloader.removeLS(key)}}})}catch(e){}};lsloader.clean();lsloader.load=function(jsname,jspath,cssonload,isJs){if(typeof cssonload==="boolean"){isJs=cssonload;cssonload=undefined}isJs=isJs||false;cssonload=cssonload||function(){};var code;code=this.getLS(jsname);if(code&&code.indexOf(versionString)===-1){this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}if(code){var versionNumber=code.split(versionString)[0];if(versionNumber!=jspath){console.log("reload:"+jspath);this.removeLS(jsname);this.requestResource(jsname,jspath,cssonload,isJs);return}code=code.split(versionString)[1];if(isJs){this.jsRunSequence.push({name:jsname,code:code});this.runjs(jspath,jsname,code)}else{document.getElementById(jsname).appendChild(document.createTextNode(code));cssonload()}}else{this.requestResource(jsname,jspath,cssonload,isJs)}};lsloader.requestResource=function(name,path,cssonload,isJs){var that=this;if(isJs){this.iojs(path,name,function(path,name,code){that.setLS(name,path+versionString+code);that.runjs(path,name,code)})}else{this.iocss(path,name,function(code){document.getElementById(name).appendChild(document.createTextNode(code));that.setLS(name,path+versionString+code)},cssonload)}};lsloader.iojs=function(path,jsname,callback){var that=this;that.jsRunSequence.push({name:jsname,code:""});try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(path,jsname,xhr.response);return}}that.jsfallback(path,jsname)}};xhr.send(null)}catch(e){that.jsfallback(path,jsname)}};lsloader.iocss=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.iofonts=function(path,jsname,callback,cssonload){var that=this;try{var xhr=new XMLHttpRequest;xhr.open("get",path,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){callback(xhr.response);cssonload();return}}that.cssfallback(path,jsname,cssonload)}};xhr.send(null)}catch(e){that.cssfallback(path,jsname,cssonload)}};lsloader.runjs=function(path,name,code){if(!!name&&!!code){for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code=code}}}if(!!this.jsRunSequence[0]&&!!this.jsRunSequence[0].code&&this.jsRunSequence[0].status!="failed"){var script=document.createElement("script");script.appendChild(document.createTextNode(this.jsRunSequence[0].code));script.type="text/javascript";document.getElementsByTagName("head")[0].appendChild(script);this.jsRunSequence.shift();if(this.jsRunSequence.length>0){this.runjs()}}else if(!!this.jsRunSequence[0]&&this.jsRunSequence[0].status=="failed"){var that=this;var script=document.createElement("script");script.src=this.jsRunSequence[0].path;script.type="text/javascript";this.jsRunSequence[0].status="loading";script.onload=function(){that.jsRunSequence.shift();if(that.jsRunSequence.length>0){that.runjs()}};document.body.appendChild(script)}};lsloader.tagLoad=function(path,name){this.jsRunSequence.push({name:name,code:"",path:path,status:"failed"});this.runjs()};lsloader.jsfallback=function(path,name){if(!!this.jsnamemap[name]){return}else{this.jsnamemap[name]=name}for(var k in this.jsRunSequence){if(this.jsRunSequence[k].name==name){this.jsRunSequence[k].code="";this.jsRunSequence[k].status="failed";this.jsRunSequence[k].path=path}}this.runjs()};lsloader.cssfallback=function(path,name,cssonload){if(!!this.cssnamemap[name]){return}else{this.cssnamemap[name]=1}var link=document.createElement("link");link.type="text/css";link.href=path;link.rel="stylesheet";link.onload=link.onerror=cssonload;var root=document.getElementsByTagName("script")[0];root.parentNode.insertBefore(link,root)};lsloader.runInlineScript=function(scriptId,codeId){var code=document.getElementById(codeId).innerText;this.jsRunSequence.push({name:scriptId,code:code});this.runjs()};lsloader.loadCombo=function(jslist){var updateList="";var requestingModules={};for(var k in jslist){var LS=this.getLS(jslist[k].name);if(!!LS){var version=LS.split(versionString)[0];var code=LS.split(versionString)[1]}else{var version=""}if(version==jslist[k].path){this.jsRunSequence.push({name:jslist[k].name,code:code,path:jslist[k].path})}else{this.jsRunSequence.push({name:jslist[k].name,code:null,path:jslist[k].path,status:"comboloading"});requestingModules[jslist[k].name]=true;updateList+=(updateList==""?"":";")+jslist[k].path}}var that=this;if(!!updateList){var xhr=new XMLHttpRequest;xhr.open("get",combo+updateList,true);xhr.onreadystatechange=function(){if(xhr.readyState==4){if(xhr.status>=200&&xhr.status<300||xhr.status==304){if(xhr.response!=""){that.runCombo(xhr.response,requestingModules);return}}else{for(var i in that.jsRunSequence){if(requestingModules[that.jsRunSequence[i].name]){that.jsRunSequence[i].status="failed"}}that.runjs()}}};xhr.send(null)}this.runjs()};lsloader.runCombo=function(comboCode,requestingModules){comboCode=comboCode.split("/*combojs*/");comboCode.shift();for(var k in this.jsRunSequence){if(!!requestingModules[this.jsRunSequence[k].name]&&!!comboCode[0]){this.jsRunSequence[k].status="comboJS";this.jsRunSequence[k].code=comboCode[0];this.setLS(this.jsRunSequence[k].name,this.jsRunSequence[k].path+versionString+comboCode[0]);comboCode.shift()}}this.runjs()}})();</script>
@@ -235,15 +235,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://lovemin.space">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档 | 绍强的技术博客">
+    <meta property="og:title" content="在安卓机上部署服务器运行博客系统 – 基本配置 | 绍强的技术博客">
     <meta property="og:image" content="http://lovemin.space/img/favicon.png" />
     <meta property="og:description" content="情不知所起，一往而深">
-    
+    <meta property="og:article:tag" content="2018 加油"> <meta property="og:article:tag" content="Linux"> <meta property="og:article:tag" content="博客系统"> 
 
+    
+        <meta property="article:published_time" content="Thu Jan 25 2018 22:35:00 GMT+0800" />
+        <meta property="article:modified_time" content="Mon Jan 29 2018 01:29:57 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="归档 | 绍强的技术博客">
+    <meta name="twitter:title" content="在安卓机上部署服务器运行博客系统 – 基本配置 | 绍强的技术博客">
     <meta name="twitter:description" content="情不知所起，一往而深">
     <meta name="twitter:image" content="http://lovemin.space/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -251,13 +254,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="http://lovemin.space/archives/index.html" />
+        <link rel="canonical" href="http://lovemin.space/在安卓机上部署服务器运行博客系统 – 基本配置.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": "http://lovemin.space/在安卓机上部署服务器运行博客系统 – 基本配置.html",
+    "headline": "在安卓机上部署服务器运行博客系统 – 基本配置",
+    "datePublished": "Thu Jan 25 2018 22:35:00 GMT+0800",
+    "dateModified": "Mon Jan 29 2018 01:29:57 GMT+0800",
+    "author": {
+        "@type": "Person",
+        "name": "绍强",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/avatar.png"
+        },
+        "description": "Hello Word !,Nice to meet you !"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "绍强的技术博客",
+        "logo": {
+            "@type":"ImageObject",
+            "url": "/img/favicon.png"
+        }
+    },
+    "keywords": ",2018 加油,Linux,博客系统",
+    "description": "情不知所起，一往而深",
+}
+</script>
 
 
     
@@ -291,281 +324,309 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+
+    <!-- Left aligned menu below button -->
+    
+    
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#在安卓机上部署服务器运行博客系统–-基本配置"><span class="post-toc-number">1.</span> <span class="post-toc-text">在安卓机上部署服务器运行博客系统– 基本配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#步骤"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">步骤</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#手机获取root权限"><span class="post-toc-number">1.1.1.</span> <span class="post-toc-text">手机获取root权限</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装BusyBox"><span class="post-toc-number">1.1.2.</span> <span class="post-toc-text">安装BusyBox</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#安装Linux-Deploy"><span class="post-toc-number">1.1.3.</span> <span class="post-toc-text">安装Linux Deploy</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#基本配置"><span class="post-toc-number">1.1.3.1.</span> <span class="post-toc-text">基本配置</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#Linux系统的安装"><span class="post-toc-number">1.1.3.2.</span> <span class="post-toc-text">Linux系统的安装</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#启用与停止"><span class="post-toc-number">1.1.3.3.</span> <span class="post-toc-text">启用与停止</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#XShell-PC端-JuiceSSH-手机端-的配置和登录"><span class="post-toc-number">1.1.4.</span> <span class="post-toc-text">XShell(PC端)/JuiceSSH(手机端)的配置和登录</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#XSHell-PC端-登录"><span class="post-toc-number">1.1.4.1.</span> <span class="post-toc-text">XSHell(PC端)登录</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#JuiceSSH-手机端-的配置和登录"><span class="post-toc-number">1.1.4.2.</span> <span class="post-toc-text">JuiceSSH(手机端)的配置和登录</span></a></li></ol></li></ol></li></ol></li></ol>
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署.html">在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="绍强's avatar">
-            </div>
-            <div>
-                <strong>绍强</strong>
-                <span>1月 29, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/博客部署/">博客部署</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/在安卓机上部署服务器运行博客系统 – 基本配置.html">在安卓机上部署服务器运行博客系统 – 基本配置</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/在安卓机上部署服务器运行博客系统 – 基本配置.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="绍强's avatar">
-            </div>
-            <div>
-                <strong>绍强</strong>
-                <span>1月 25, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/博客部署/">博客部署</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/在安卓机上部署服务器运行博客系统.html">在安卓机上部署服务器运行博客系统</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/在安卓机上部署服务器运行博客系统.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="绍强's avatar">
-            </div>
-            <div>
-                <strong>绍强</strong>
-                <span>1月 25, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/博客部署/">博客部署</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/我的第一篇博客.html">我的第一篇博客</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/我的第一篇博客.html" target="_self">阅读全文</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="绍强's avatar">
-            </div>
-            <div>
-                <strong>绍强</strong>
-                <span>1月 22, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-          
-              <!-- Category -->
-              <span class="post_entry-category">
-                  <a class="post_category-link" href="/categories/生活日记/">生活日记</a>
-              </span>
-            
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
+</script>
 
-        locatePost = locatePost.next();
+        
+    
+            <p class="article-headline-p">
+                在安卓机上部署服务器运行博客系统 – 基本配置
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>绍强</strong>
+        <span>1月 25, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/2018-加油/">2018 加油</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Linux/">Linux</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/博客系统/">博客系统</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+        
+            <!-- Busuanzi Views -->
+            <a class="post_share-link" href="#">
+                <li class="mdl-menu__item">
+                    <span id="busuanzi_container_page_pv">
+                        <span id="busuanzi_value_page_pv"></span>&nbsp;浏览量
+                    </span>
+                </li>
+            </a>
+        
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=在安卓机上部署服务器运行博客系统 – 基本配置&url=http://lovemin.space/在安卓机上部署服务器运行博客系统 – 基本配置.html&pic=http://lovemin.space/img/favicon.png&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+
+    <!-- Share Facebook -->
+    
+
+    <!-- Share Google+ -->
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=绍强的技术博客&title=在安卓机上部署服务器运行博客系统 – 基本配置&summary=情不知所起，一往而深&pics=http://lovemin.space/img/favicon.png&url=http://lovemin.space/在安卓机上部署服务器运行博客系统 – 基本配置.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <h1 id="在安卓机上部署服务器运行博客系统–-基本配置"><a href="#在安卓机上部署服务器运行博客系统–-基本配置" class="headerlink" title="在安卓机上部署服务器运行博客系统– 基本配置"></a><center>在安卓机上部署服务器运行博客系统– 基本配置</center></h1><p>本系列其他文章：</p>
+<ol>
+<li><a href="http://lovemin.space/2018/01/25/在安卓机上部署服务器运行博客系统/">在安卓上部署服务器运行博客系统 </a></li>
+<li><a href="http://lovemin.space/2018/01/25/在安卓机上部署服务器运行博客系统%20–%20基本配置/">在安卓上部署服务器运行博客系统 – 基本配置</a> (本文)</li>
+<li><a href="">在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署</a><br><a href="">在安卓上部署服务器运行博客系统 – Tale博客系统的部署</a></li>
+<li><a href="">在安卓上部署服务器运行博客系统 – 内网穿透</a></li>
+</ol>
+<hr>
+<p>&emsp;&emsp;本文主要介绍<a href="">BusyBox</a>、<a href="">Linux Deploy</a>、<a href="">JuiceSSH</a>和<a href="">XShell</a>的配置和使用，以完成Linux系统的部署。<br>相关应用的下载：<a href="">点击下载</a></p>
+<hr>
+<p>手机配置：<br>&emsp;&emsp;红米2（1G RAM+8G ROM）</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><p><strong><font color="#FF4500">这里要注意顺序是：</font></strong></p>
+<blockquote>
+<p>手机获取root权限<br>安装BusyBox并且完成初始化<br>安装Linux Deploy部署Linux<br>安装JuiceSSH或XShell登录系统</p>
+</blockquote>
+<h3 id="手机获取root权限"><a href="#手机获取root权限" class="headerlink" title="手机获取root权限"></a>手机获取root权限</h3><p>&emsp;&emsp;小米手机可以刷开发版本获取root权限，并且在之后安装软件后，BusyBox和Linux Deploy会申请获取手机root权限。</p>
+<hr>
+<h3 id="安装BusyBox"><a href="#安装BusyBox" class="headerlink" title="安装BusyBox"></a>安装BusyBox</h3><p>&emsp;&emsp;由于原机自带的Linux命令集不完整，我们需要安装Busybox来扩充Linux命令集。</p>
+<hr>
+<h3 id="安装Linux-Deploy"><a href="#安装Linux-Deploy" class="headerlink" title="安装Linux Deploy"></a>安装Linux Deploy</h3><p>&emsp;&emsp;Linux Deploy是一款可以在Android设备上部署Linux环境的应用，在我这种非专业人士来看，其原理大概是在Android的Linux层跑一个chroot或者proot容器，然后再在容器中运行我们准备好的另外一个Linux系统。值得注意的是，这与我们熟知的虚拟机技术不同，新的Linux系统将和Android系统平行运行(非专业解释不要深究)。<br>安装完成后，我们将使用Linux Deploy在Android设备上部署Ubuntu系统：</p>
+<h4 id="基本配置"><a href="#基本配置" class="headerlink" title="基本配置"></a>基本配置</h4><p>点击界面右下方的”下载”图标进入配置文件的设置界面进行如下设置：</p>
+<p><strong><font color="#FF7F50">Containerization method:</font></strong> “chroot”</p>
+<p><strong><font color="#FF7F50">发行版:</font></strong>“Ubuntu”</p>
+<p><strong><font color="#FF7F50">架构:</font></strong> 保持默认值</p>
+<p><strong><font color="#FF7F50">发行版版本:</font></strong> “yakkety”(即Ubuntu 16.10)</p>
+<p><strong><font color="#FF7F50">源地址:</font></strong> <a href="http://mirror.tuna.tsinghua.edu.cn/ubuntu-ports" target="_blank" rel="noopener">http://mirror.tuna.tsinghua.edu.cn/ubuntu-ports</a></p>
+<blockquote>
+<p>这里我们采用默认方式部署，即在软件源中下载Linux组件和必要的软件包的方式部署，因为默认源速度不佳，为了不下载一天一夜，我们这里使用的是清华大学的开源镜像源。</p>
+</blockquote>
+<p><strong><font color="#FF7F50">安装类型:</font></strong> 这一选项的话我有两种建议，”目录”和”文件”，如果对Linux不太熟悉并且/data分区剩余空间≥2g的话，建议使用”目录”的安装方式，如果对Linux比较熟悉或者/data分区剩余空间&lt;2g的话，建议使用”文件”的安装方式。在这里，为了操作方便，我使用”目录”的安装方式，但在实际使用中，为了不占用/data分区空间，建议大家采用”文件(镜像)”的安装方式。</p>
+<p><strong><font color="#FF7F50">安装路径:</font></strong> “安装路径”选择”目录”时，这个选项将定义系统安装在哪个路径中，默认路径为<code>${ENV_DIR}/rootfs/linux</code>，即安装在<code>/data/user/0/ru.meefik.linuxdeploy/env/rootfs/linux</code>目录下。”安装类型”选择”文件”时，这个选项将定义Linux系统安装在哪个镜像文件中，默认值为<code>外置存储/linux.img</code>。</p>
+<p><strong><font color="#FF7F50">镜像大小(MB)(安装类型”选择”文件”时可用):</font></strong> 这个选项将定义系统所在镜像文件的大小。系统安装之前将在安装目录创建一个大小为设置的镜像大小的空文件用来存放系统文件和数据(相当于新Linux系统的总磁盘空间)。建议不要用默认值，填写2048m足够了。</p>
+<p><strong><font color="#FF7F50">文件系统(安装类型”选择”文件”时可用):</font></strong> 选择”自动”。</p>
+<p><strong><font color="#FF7F50">用户名:</font></strong> 这个选项为登录系统时的用户名，默认为”android”，可以随意更改。</p>
+<p><strong><font color="#FF7F50">用户密码:</font></strong> 这个选项为Ubuntu系统中用户的密码，可以根据自己的习惯填写，之后要用。</p>
+<p><strong><font color="#FF7F50">Privileged Users:</font></strong> 保持默认值”root”</p>
+<p><strong><font color="#FF7F50">DNS服务器:</font></strong> 可以保持默认值，也可自定义填写DNS服务器地址(如114.114.114.114等)</p>
+<p><strong><font color="#FF7F50">本地化:</font></strong> 建议保持默认值POSIX，如果有其他需求，比如需要让ssh返回结果为中文或者让图形界面的显示语言为中文时，选择”zh_CN.UTF8”</p>
+<p><strong><font color="#FF7F50">INIT/MOUNTS项:</font></strong> 若有需求时可以设置，无需求可以忽略。</p>
+<p><strong><font color="#FF7F50">允许SSH服务器启动:</font></strong> 勾选打开此选项</p>
+<p><strong><font color="#FF7F50">SSH设置:</font></strong> 保持默认</p>
+<p><strong><font color="#FF7F50">允许图形界面启动:</font></strong> 若有需求可以设置，这里不打开这个选项。</p>
+<h4 id="Linux系统的安装"><a href="#Linux系统的安装" class="headerlink" title="Linux系统的安装"></a>Linux系统的安装</h4><p>&emsp;&emsp;设置完成后，按返回键返回到应用主界面，点击右上角菜单键，选择”安装”开始Linux系统的安装，安装过程中需要一直保持网络连接(建议在WIFI下安装，大概需要几百兆流量)。</p>
+<blockquote>
+<p>当看到终端输出<code>&gt;&gt;&gt;deploy</code>时，代表安装已开始<br>开始和完成中间约二十分钟，使用默认源三十分钟以上。</p>
+<p>当看到终端输出<code>&lt;&lt;&lt;deploy</code>时，代表安装已完成。</p>
+</blockquote>
+<h4 id="启用与停止"><a href="#启用与停止" class="headerlink" title="启用与停止"></a>启用与停止</h4><p>点击主界面下方的<code>启动</code>按钮可以启动新安装的系统</p>
+<blockquote>
+<p>当看到终端输出<code>&gt;&gt;&gt;Start</code>时，代表系统开始启动<br><strong><font color="#FF7F50">注意：</font></strong>要看到<code>Starting extra/ssh...done</code>后面才能完成连接，如果不是<code>done</code>而是<code>fail</code>时，后面Juicessh或XShell会连接不上，一般解决办法是检查自己Linux Deploy的配置是否正确，清除数据重新来一遍。<br>当看到终端输出<code>&lt;&lt;&lt;Start</code>时，代表系统已经启动</p>
+</blockquote>
+<p>点击<code>停止</code>可以停止系统。</p>
+<p><strong><font color="#FF4500">至此，系统部署部分描述完毕。</font></strong></p>
+<hr>
+<h3 id="XShell-PC端-JuiceSSH-手机端-的配置和登录"><a href="#XShell-PC端-JuiceSSH-手机端-的配置和登录" class="headerlink" title="XShell(PC端)/JuiceSSH(手机端)的配置和登录"></a>XShell(PC端)/JuiceSSH(手机端)的配置和登录</h3><p>&emsp;&emsp;部署完毕后，我们需要用到SSH工具来登录系统，这里以XShell(PC端)/JuiceSSH(手机端)为例，<strong><font color="#FF4500">这里我推荐用XShell(PC端)，不过用JuiceSSH(手机端)是一样的</font></strong>。</p>
+<h4 id="XSHell-PC端-登录"><a href="#XSHell-PC端-登录" class="headerlink" title="XSHell(PC端)登录"></a>XSHell(PC端)登录</h4><p>&emsp;&emsp;电脑下载并安装<code>XShell 5</code></p>
+<blockquote>
+<p>待续…</p>
+</blockquote>
+<p>因为我们是通过普通用户android登陆系统的，接下来我们需要设置超级用户(root)的密码并且以超级用户的身份登陆系统，在终端中键入:sudo passwd root<br>终端将会提示用户输入root用户的密码并且再次输入一次以确认(输入密码时密码将不可见，连*都不会显示)。<br>设置完毕后，在终端键入命令su并输入刚刚设置好的root用户密码即可切换到root用户。</p>
+<h4 id="JuiceSSH-手机端-的配置和登录"><a href="#JuiceSSH-手机端-的配置和登录" class="headerlink" title="JuiceSSH(手机端)的配置和登录"></a>JuiceSSH(手机端)的配置和登录</h4><p>&emsp;&emsp;手机安装JuiceSSH后，点击连接-&gt;认证，新建一个认证：<br>=&gt;昵称：随便填写，用于标识认证，这里填写“用于标识认证”<br>=&gt;用户名：填写Linux Deploy上你填写过的用户名，这里是lovemin<br>=&gt;密码：填写Linux Deploy上你填写过的密码<br>点击右上角√<br>进入新建连接界面:<br>=&gt;昵称:可随意填写，用以标识SSH链接，这里填写“用于标识连接”<br>=&gt;类型:SSH<br>=&gt;地址:填写Linux Deploy应用标题栏中那个，这里是127.0.0.1<br>点击右上角√<br>在”连接列表”中点击刚刚新建的这个项目连接到我们刚刚部署好的系统，连接成功后界面如下:</p>
+
+        
+                <blockquote style="margin: 2em 0 0;padding: 0.5em 1em;border-left: 3px solid #F44336;background-color: #F5F5F5;list-style: none;">
+                    <p><strong>
+                         
+                            本文由<a target="_blank" href="http://lovemin.space">绍强</a>创作，使用「<a target="_blank" href="http://creativecommons.org/licenses/by/4.0/deed.zh">署名 4.0 国际</a>」创作共享协议，可自由转载、引用，但需署名作者且注明文章出处
+                        </strong>
+                        <br>
+                        <strong>本文链接：</strong><a href="http://lovemin.space/在安卓机上部署服务器运行博客系统 – 基本配置.html">http://lovemin.space/在安卓机上部署服务器运行博客系统 – 基本配置.html</a>
+                    </p>
+                </blockquote>
+        
+    
+
+    
+</div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+    <div id="comment" class="comment"></div>
+<script>
+    window.onload = function() {
+        new Valine({
+            av: AV, // source from av-min.js
+            el: '.comment',
+            notify: false,
+            verify: false,
+            app_id: "dJbaU1SjWpqo3rVzwo9AQBrh-gzGzoHsz",
+            app_key: "cbr5pGYoBQrWeXoavOyVeVWe",
+            placeholder: "留下你的脚印"
+        });
     }
 </script>
 
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
     
-</div>
+        <a href="/在安卓上部署服务器运行博客系统 – Blog_mini博客系统的部署.html" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            新篇
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/在安卓机上部署服务器运行博客系统.html" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
