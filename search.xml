@@ -88,7 +88,16 @@ sudo apt-get install python-pip
 &emsp;&emsp;因为这里要安装Blog_mini所需的一些扩展包，所以需要一定时间，当然如果网络良好的话，很快就可以安装完成。</li>
 </ul>
 <hr>
-<p>&emsp;&emsp;完成以上步骤后，Blog_mini的全部需求环境就已经基本搭建好了，之后进行数据库的配置，作为一个萌新，我选择使用sqlite作为默认数据库来运行Blog_mini，方便快捷</p>
+<h2 id="配置数据库"><a href="#配置数据库" class="headerlink" title="配置数据库"></a>配置数据库</h2><p>&emsp;&emsp;完成以上步骤后，Blog_mini的全部需求环境就已经基本搭建好了，之后进行数据库的配置，作为一个萌新，我选择使用sqlite作为默认数据库来运行Blog_mini，方便快捷</p>
+<h3 id="使用sqlite作为默认数据库来运行Blog-mini"><a href="#使用sqlite作为默认数据库来运行Blog-mini" class="headerlink" title="使用sqlite作为默认数据库来运行Blog_mini"></a>使用sqlite作为默认数据库来运行Blog_mini</h3><p>Python本身就自带了sqlite数据库，因此如果你要使用sqlite来作为默认数据库，你不需要做任何配置。</p>
+<p>&emsp;&emsp;接下来要做的就是运行Blog_mini了。</p>
+<ul>
+<li>请在Blog_mini目录下执行下面的命令：<pre><code class="bash">python manage.py deploy product
+</code></pre>
+运行blog_mini:<pre><code class="bash">gunicorn manage:app
+</code></pre>
+</li>
+</ul>
 ]]></content>
       
         <categories>
@@ -286,6 +295,12 @@ sudo apt-get install python-pip
   
     
     <entry>
+      <title><![CDATA[links]]></title>
+      <url>/links/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[tags]]></title>
       <url>/tags/index.html</url>
       <content type="html"></content>
@@ -300,12 +315,6 @@ sudo apt-get install python-pip
 </blockquote>
 <h1 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h1><p>主页：<a href="http://lovemin.space">http://lovemin.space</a><br>Mail：<a href="mailto:lovemin_os@163.com" target="_blank" rel="noopener">lovemin_os@163.com</a><br>GitHub：<a href="https://github.com/LoveMinOS" target="_blank" rel="noopener">全球最大的同性交友平台</a><br>知乎：<a href="https://www.zhihu.com/people/wan-shao-qiang-92/activities" target="_blank" rel="noopener">绍强</a><br>微博：<a href="https://weibo.com/5708553936/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank" rel="noopener">绍强</a><br>网易云音乐：<a href="http://music.163.com/#/user/home?id=314575884" target="_blank" rel="noopener">绍强</a><br>QQ：245838667</p>
 ]]></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[links]]></title>
-      <url>/links/index.html</url>
-      <content type="html"></content>
     </entry>
     
   
