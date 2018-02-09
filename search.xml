@@ -87,6 +87,8 @@ sudo apt-get install python-pip
 </code></pre>
 &emsp;&emsp;因为这里要安装Blog_mini所需的一些扩展包，所以需要一定时间，当然如果网络良好的话，很快就可以安装完成。</li>
 </ul>
+<hr>
+<p>&emsp;&emsp;完成以上步骤后，Blog_mini的全部需求环境就已经基本搭建好了，之后进行数据库的配置，作为一个萌新，我选择使用sqlite作为默认数据库来运行Blog_mini，方便快捷</p>
 ]]></content>
       
         <categories>
