@@ -28,24 +28,25 @@
 <pre><code class="bash">git version
 </code></pre>
 <ul>
-<li><p>如果安装了，终端则会显示git的版本信息，如果“git”没有安装，可以在终端输入下面命令通过apt-get方式安装：</p>
-<pre><code class="bash">sudo apt-get install git
+<li>如果安装了，终端则会显示git的版本信息，如果“git”没有安装，可以在终端输入下面命令通过apt-get方式安装：<pre><code class="bash">sudo apt-get install git
 </code></pre>
 <blockquote>
 <p>无法安装的话可以切换到超级用户（root）下在终端输入上面命令。</p>
 </blockquote>
 </li>
-<li><p>安装完成后，切换到普通用户，在普通用户用户目录中创建一个文件夹用于存放Blog_mini文件，这里我根据作者部署文档创建一个名为project的目录：</p>
-<pre><code class="bash">mkdir project
+</ul>
+<ul>
+<li>安装完成后，切换到普通用户，在普通用户用户目录中创建一个文件夹用于存放Blog_mini文件，这里我根据作者部署文档创建一个名为project的目录：<pre><code class="bash">mkdir project
 cd project
 </code></pre>
-<p>在project目录下在终端输入下面命令从Blog_mini项目地址中克隆源代码：</p>
-<pre><code class="bash">git clone https://github.com/xpleaf/Blog_mini
+在project目录下在终端输入下面命令从Blog_mini项目地址中克隆源代码：<pre><code class="bash">git clone https://github.com/xpleaf/Blog_mini
 </code></pre>
 <blockquote>
 <p>如果网络情况良好的话，很快就可以把代码克隆下来。</p>
 </blockquote>
 </li>
+</ul>
+<ul>
 <li><p>现在在project目录下就出现了一个名为Blog_mini的文件夹；进入Blog_mini目录下，可以查看Blog_mini的源代码目录结构：</p>
 <pre><code class="bash">cd Blog_mini
 ls
@@ -279,6 +280,17 @@ sudo apt-get install python-pip
   
     
     <entry>
+      <title><![CDATA[情不知所起，一往而深]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>讨厌一成不变，喜欢尝试新鲜事物<br>有点宅，不善于主动交际<br>过于执着，难以放下</p>
+<blockquote>
+<p>本人擅长Ps、Dw、Ae、Proteus、Keil、Vs、Auto CAD、Altium Designer等软件的安装与卸载，精通CSS、JavaScript、PHP、ASP、C、C＋＋、C#、Java、Ruby、Perl、Lisp、python、Objective-C、ActionScript、Pascal、spss、sas等单词的拼写，熟悉Windows、Linux、Mac、Android、IOS、WP8等系统的开关机。</p>
+</blockquote>
+<h1 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h1><p>主页：<a href="http://lovemin.space">http://lovemin.space</a><br>Mail：<a href="mailto:lovemin_os@163.com" target="_blank" rel="noopener">lovemin_os@163.com</a><br>GitHub：<a href="https://github.com/LoveMinOS" target="_blank" rel="noopener">全球最大的同性交友平台</a><br>知乎：<a href="https://www.zhihu.com/people/wan-shao-qiang-92/activities" target="_blank" rel="noopener">绍强</a><br>微博：<a href="https://weibo.com/5708553936/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank" rel="noopener">绍强</a><br>网易云音乐：<a href="http://music.163.com/#/user/home?id=314575884" target="_blank" rel="noopener">绍强</a><br>QQ：245838667</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[links]]></title>
       <url>/links/index.html</url>
       <content type="html"></content>
@@ -288,17 +300,6 @@ sudo apt-get install python-pip
       <title><![CDATA[tags]]></title>
       <url>/tags/index.html</url>
       <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[情不知所起，一往而深]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="关于我"><a href="#关于我" class="headerlink" title="关于我"></a>关于我</h1><p>讨厌一成不变，喜欢尝试新鲜事物<br>有点宅，不善于主动交际<br>过于执着，难以放下</p>
-<blockquote>
-<p>本人擅长Ps、Dw、Ae、Proteus、Keil、Vs、Auto CAD、Altium Designer等软件的安装与卸载，精通CSS、JavaScript、PHP、ASP、C、C＋＋、C#、Java、Ruby、Perl、Lisp、python、Objective-C、ActionScript、Pascal、spss、sas等单词的拼写，熟悉Windows、Linux、Mac、Android、IOS、WP8等系统的开关机。</p>
-</blockquote>
-<h1 id="抓得到我吗"><a href="#抓得到我吗" class="headerlink" title="抓得到我吗"></a>抓得到我吗</h1><p>主页：<a href="http://lovemin.space">http://lovemin.space</a><br>Mail：<a href="mailto:lovemin_os@163.com" target="_blank" rel="noopener">lovemin_os@163.com</a><br>GitHub：<a href="https://github.com/LoveMinOS" target="_blank" rel="noopener">全球最大的同性交友平台</a><br>知乎：<a href="https://www.zhihu.com/people/wan-shao-qiang-92/activities" target="_blank" rel="noopener">绍强</a><br>微博：<a href="https://weibo.com/5708553936/profile?rightmod=1&amp;wvr=6&amp;mod=personinfo" target="_blank" rel="noopener">绍强</a><br>网易云音乐：<a href="http://music.163.com/#/user/home?id=314575884" target="_blank" rel="noopener">绍强</a><br>QQ：245838667</p>
-]]></content>
     </entry>
     
   
